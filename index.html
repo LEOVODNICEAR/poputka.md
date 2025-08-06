@@ -1,110 +1,53 @@
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8" />
-    <title>poputka.md – În curând</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      html,
-      body {
-        margin: 0;
-        padding: 0;
-        background: #f4f4f4;
-        font-family: "Inter", sans-serif;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poputka.md</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
 
-      .iphone-container {
-        width: 430px;
-        height: 932px;
-        background: white;
-        border-radius: 30px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-        padding: 40px 24px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-      }
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 bg-white shadow">
+    <h1 class="text-xl font-bold">Poputka.md</h1>
+    <nav class="space-x-4">
+      <a href="#" class="text-blue-600">Caută o cursă</a>
+      <a href="#" class="text-blue-600">Adaugă cursă</a>
+      <a href="#" class="text-gray-600">Autentificare</a>
+    </nav>
+  </header>
 
-      h1 {
-        font-size: 28px;
-        margin-bottom: 20px;
-        color: #009688;
-      }
+  <!-- Hero -->
+  <section class="text-center py-20 bg-blue-50">
+    <h2 class="text-4xl font-bold mb-4">Călătorește ușor prin Moldova</h2>
+    <p class="text-lg mb-6">Conectează-te cu șoferi care au locuri libere</p>
+    <a href="#" class="bg-blue-600 text-white px-6 py-3 rounded-full text-lg shadow">Caută o cursă</a>
+  </section>
 
-      p {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #333;
-      }
-
-      .highlight {
-        font-weight: bold;
-        color: #ff9800;
-      }
-
-      .email-form {
-        margin-top: 30px;
-      }
-
-      input[type="email"] {
-        padding: 12px;
-        width: 93%;
-        border-radius: 8px;
-        border: 1px solid #ccc;
-        margin-bottom: 12px;
-      }
-
-      button {
-        padding: 12px;
-        width: 100%;
-        background: #009688;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background: #00796b;
-      }
-
-      @media (max-height: 932px) {
-        .iphone-container {
-          transform: scale(0.9);
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="iphone-container">
-      <p>🚀</p>
-      <h1>POPUTKA</h1>
-      <p>
-        Uneori, tot ce ai nevoie e cineva cu același drum.
-        <span class="highlight"
-          ><br />
-
-          Nu e vorba despre mașini, ci despre oameni.
-        </span>
-      </p>
-      <p>
-        POPUTKA conectează oameni, fără bariere, fără costuri - o idee
-        noncomercială despre încredere, sprijin și direcții comune.
-      </p>
-      <p><strong>Lansare în curând.</strong></p>
-
-      <div class="email-form">
-        <input type="email" placeholder="Emailul tău (opțional)" />
-        <button>Notifică-mă la lansare</button>
-        <p>vodnicear@gmail.com</p>
+  <!-- 3 pași -->
+  <section class="py-12 bg-white text-center">
+    <h3 class="text-2xl font-semibold mb-6">Cum funcționează?</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6">
+      <div>
+        <span class="text-3xl">🔍</span>
+        <p class="mt-2">Caută o cursă disponibilă</p>
+      </div>
+      <div>
+        <span class="text-3xl">🧑‍✈️</span>
+        <p class="mt-2">Rezervă locul direct</p>
+      </div>
+      <div>
+        <span class="text-3xl">🚌</span>
+        <p class="mt-2">Călătorește în siguranță</p>
       </div>
     </div>
-  </body>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-gray-200 mt-12">
+    <p>© 2025 Poputka.md | <a href="#" class="text-blue-600">Centrul de Siguranță</a></p>
+  </footer>
+
+</body>
 </html>
