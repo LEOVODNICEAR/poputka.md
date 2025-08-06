@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>poputka</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="icon"
-      href="https://cdn-icons-png.flaticon.com/512/684/684908.png"
-    />
-    <style>
-        .iphone-container {
-          width: 390px;
-          /* height: 844px; ← eliminăm această linie */
-          background: white;
-          border-radius: 30px;
-          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-          padding: 40px 24px;
-          box-sizing: border-box;
-          text-align: center;
-        }
-      
-        .fade-in {
-          animation: fadeInUp 1s ease-out both;
-        }
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(30px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      </style>
-      
-  </head>
-  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div class="iphone-container fade-in my-auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>poputka</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/684/684908.png" />
+  <style>
+    .iphone-container {
+      width: 390px;
+      height: 844px;
+      background: white;
+      border-radius: 30px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 24px;
+      text-align: center;
+      box-sizing: border-box;
+    }
 
-    <img src="https://raw.githubusercontent.com/LEOVODNICEAR/poputka.md/main/docs/img/logo.png
-    " alt="Logo poputka" class="w-20 h-20 mx-auto mb-6" />
-    <h1 class="text-4xl font-bold text-teal-700 mb-2 tracking-wide">poputka</h1>
+    .fade-in {
+      animation: fadeInUp 1s ease-out both;
+    }
 
-      </h1>
-      <p class="text-gray-700 leading-relaxed mb-8">
-        Găsește pe cineva cu același drum.
-      </p>
-      <a
-        href="mailto:vodnicear@gmail.com"
-        class="inline-block bg-teal-600 text-white px-6 py-2 rounded-full shadow hover:bg-teal-700 transition"
-      >
-        Anunță-mă la lansare
-      </a>
-    </div>
-  </body>
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="iphone-container fade-in">
+    <img src="https://raw.githubusercontent.com/LEOVODNICEAR/poputka.md/main/docs/img/logo.png" alt="Logo poputka" class="w-20 h-20 mb-6" />
+    <h1 class="text-3xl font-bold text-teal-700 mb-4 tracking-wide">poputka</h1>
+    <p class="text-gray-700 leading-relaxed mb-8">
+      Găsește pe cineva cu același drum.
+    </p>
+    <a
+      href="mailto:vodnicear@gmail.com"
+      class="inline-block bg-teal-600 text-white px-6 py-2 rounded-full shadow hover:bg-teal-700 transition"
+    >
+      Anunță-mă la lansare
+    </a>
+  </div>
+</body>
 </html>
