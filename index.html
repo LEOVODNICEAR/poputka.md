@@ -10,38 +10,35 @@
       href="https://cdn-icons-png.flaticon.com/512/684/684908.png"
     />
     <style>
-      .iphone-container {
-        width: 390px;
-        height: 844px;
-        background: white;
-        border-radius: 30px;
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
-        padding: 40px 24px;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-      }
-
-      .fade-in {
-        animation: fadeInUp 1s ease-out both;
-      }
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(30px);
+        .iphone-container {
+          width: 390px;
+          /* height: 844px; ← eliminăm această linie */
+          background: white;
+          border-radius: 30px;
+          box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+          padding: 40px 24px;
+          box-sizing: border-box;
+          text-align: center;
         }
-        to {
-          opacity: 1;
-          transform: translateY(0);
+      
+        .fade-in {
+          animation: fadeInUp 1s ease-out both;
         }
-      }
-    </style>
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      </style>
+      
   </head>
   <body class="bg-gray-100 min-h-screen flex items-center justify-center">
-    <div
-    class="iphone-container bg-white rounded-3xl shadow-lg px-8 py-16 w-full max-w-sm text-center fade-in">
+    <div class="iphone-container fade-in my-auto">
 
     <img src="https://raw.githubusercontent.com/LEOVODNICEAR/poputka.md/main/docs/img/logo.png
     " alt="Logo poputka" class="w-20 h-20 mx-auto mb-6" />
